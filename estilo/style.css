@@ -30,8 +30,8 @@ header {
 header > h1 {
     padding-top: 50px;
     text-transform: small-caps;
-    font-family: var(--fonte3);
-    font-size: 5vw; /* tamanho do texto fica responsivo a tamanho da tela*/
+    font-size: 8vw; /* tamanho do texto fica responsivo a tamanho da tela*/
+    text-shadow: 1px 1px 10px #000000;
 }
 
 header > p {
@@ -50,15 +50,21 @@ header a:hover, footer a:hover {
 
 .paragrafos {
     font-family: var(--fonte2);
-    font-size: 3vw;
+    font-size: 27px;
     text-shadow: 1px 1px 0px #000000;
+}
+
+.paragrafos1 {
+    font-family: var(--fonte2);
+    font-size: 27px;
 }
 
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 section.normal {
@@ -68,15 +74,23 @@ section.normal {
 
 section.imagem {
     background-color: #0000003f;
-    color: white;
+    color: #ffffff;
     box-shadow: inset 6px 6px 13px 0px #0000004d;
     background-size: cover;
     background-attachment: fixed;
 }
 
-section.imagem > pre {
+section.imagem > p {
     display: inline-block;
     background-color: #0115304d;
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+section.normal > p {
+    display: inline-block;
+    background-color: #ffffff00;
     border-radius: 5px;
     padding-left: 15px;
     padding-right: 15px;
